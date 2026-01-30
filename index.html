@@ -27,7 +27,7 @@
             
         </div>
     </header>
-    <div class="hero">
+    <section class="hero">
         <div class="left">
             <h1 class="titre">Join The</h1>
             <h1 class="titre">MATRIX</h1>
@@ -39,8 +39,8 @@
             </div>
         </div>
         <div class="right"><img src="/img/assets/Group 21.png" alt=""></div>
-    </div>
-    <div class="main">
+    </section>
+    <section class="main">
         <div class="unit">
             <img src="/img/assets/Group 20.png" alt="">
             <div class="left">
@@ -195,46 +195,62 @@
             </div>
             <p class="regular_24_white">Concrete evidence of our technical expertise.</p>
         </div>
-    </div>
+
+        <div class="scroll-trigger">
+            <div class="box_animation">
+                <img id="box1" class="box_layer" src="/img/assets/Carton 1.png">
+                <img id="box2" class="box_layer" src="/img/assets/Carton 2.png">
+                <img id="box3" class="box_layer" src="/img/assets/Carton 3.png">
+            </div>
+        </div>
+    </section>
+    <section class="footer">
+        <div class="vision">
+            <div class="left">
+                <div class="bar"></div>
+                <img src="/img/assets/Vector 10.png" alt="">
+            </div>
+            <div class="righ">
+                <div class="readme">
+                    <p class="regular_48">README.md</p>
+                    <div class="bar"></div>
+                </div>
+                <div class="box1">
+                    <p class="regular_20">Matrix is a Software Engineering club designed as a system.
+                        A system where speed, rigor, and real-world execution define your value.
+                    </p>
+                </div>
+                
+                <div class="text_box">
+                    <p class="regular_24">PHILOSOPHY</p>
+                    <p class="regular_12">We don’t chase comfort. We chase mastery.</p>
+                </div>
+                <div class="text_box">
+                    <p class="regular_24">VISION</p>
+                    <p class="regular_12">Build engineers capable of competing globally.</p>
+                </div>
+            </div>
+        </div>
+        <div class="stats">
+            <div class="stats_box">
+                <p class="semi_blod_64">30</p>
+                <p class="semi_blod_32">Active Members</p>
+            </div>
+            <div class="stats_box ">
+                <p class="semi_blod_64">00</p>
+                <p class="semi_blod_32">Completed Projects</p>
+            </div>
+        </div>
+        <div class="bottom">
+            <div class="line"></div>
+            <div class="copiright">
+                <p class="regular_20">© 2026 Matrix. All rights reserved.</p>
+                <a href=""><img src="/img/assets/github.png" alt=""></a>
+            </div>
+        </div>
+    </section>
 </body>
-<script>
-document.addEventListener("DOMContentLoaded", function () {
-
-    function initInfiniteScroll(selector, speed = 0.5) {
-        document.querySelectorAll(selector).forEach(container => {
-
-            // On récupère les enfants d’origine
-            const items = [...container.children];
-
-            // On duplique les enfants proprement
-            items.forEach(item => {
-                const clone = item.cloneNode(true);
-                container.appendChild(clone);
-            });
-
-            let scrollAmount = 0;
-
-            function autoScroll() {
-                scrollAmount += speed;
-                container.scrollLeft = scrollAmount;
-
-                // Si on dépasse la moitié → on reset discrètement
-                if (scrollAmount >= container.scrollWidth / 2) {
-                    scrollAmount = 0;
-                }
-
-                requestAnimationFrame(autoScroll);
-            }
-
-            autoScroll();
-        });
-    }
-
-    initInfiniteScroll('.cards', 0.5);
-    initInfiniteScroll('.cards3', 0.7);
-
-});
-</script>
+<script src="/jvs.js"></script>
 
 
 

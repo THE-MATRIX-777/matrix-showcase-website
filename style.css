@@ -57,12 +57,26 @@ h1{
   color: white;
 }
 
+.semi_blod_64 {
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 600; /* Semi-bold */
+  font-size: 64px;
+  color: #BDF400;
+}
 .semi_blod_16 {
   font-family: 'Orbitron', sans-serif;
   font-weight: 600; /* Semi-bold */
   font-size: 16px;
   color: black;
 }
+
+.semi_blod_32 {
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 600; /* Semi-bold */
+  font-size: 32px;
+  color: white;
+}
+
 .regular_24 {
   font-family: 'Orbit', sans-serif;
   font-weight: 400; /* Regular */
@@ -386,4 +400,136 @@ header img{
     width: 149px;
     height: 19px;
     background-color: #BDF400;
+}
+
+/* ------PROJECTS BOX------ */
+/* SECTION DE SCROLL */
+.scroll-trigger {
+    margin-top: 450px;
+    height: 250vh;
+    position: relative;
+}
+
+.box_animation {
+    position: sticky;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 350px;
+    height: 350px;
+    margin: auto;
+}
+
+.box_layer {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0s linear; /* transition plus nette */
+}
+
+/* Image initiale */
+#box1 { opacity: 1; }
+
+
+/* ------FOOTER SECTION------ */   
+.footer{
+    margin-left: 5.76%;
+    margin-right: 5.76%;
+    margin-top: 500px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+} 
+.vision{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.vision .left .bar{
+    height: 4px;
+    width: 88px;
+    background-color: #BDF400;
+    display: flex;
+    align-self: flex-end;
+}
+.vision .left{
+    
+    display: flex;
+    flex-direction: column;
+    width: 44%;
+}
+.vision .righ{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 56%;
+    gap: 62px;
+    
+}
+
+.vision .readme
+{
+    gap: 48px;
+    display: flex;
+    flex-direction: row;
+    align-self: flex-end;
+}
+
+.vision .readme .bar{
+    width: 149px;
+    height: 19px;
+    background-color: #BDF400;
+    display: flex;
+    align-self: flex-end;
+
+}
+.vision .righ .text_box{
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    align-items: center;
+    justify-self: center;
+    height: 116px;
+    width:693px;
+    gap: 30px;
+}
+.vision .righ .box1{
+    height: 116px;
+    width:693px;
+    gap: 30px;  
+}
+
+.stats{
+    margin-top: 160px;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    gap: 150px;
+}
+
+.stats_box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.bottom{
+    margin-top: 290px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.bottom .line{
+    width: 100%;
+    height: 3px;
+    background-color: #ffffff4d;
+}
+.copiright{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
